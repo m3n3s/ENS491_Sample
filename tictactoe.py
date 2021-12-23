@@ -14,7 +14,7 @@ winner = False
 iterations = 0      # To terminate the loop
 
 # For drawing board on to the terminal
-def printBoard():
+def board():
     print('\n=============')
     print('| ' + choices[0] + ' | ' + choices[1] + ' | ' + choices[2] + ' |')
     print('=============')
@@ -25,7 +25,7 @@ def printBoard():
 
 # Play the game while the winner is not decided or the game is drawn
 while not winner and iterations < 9:
-    printBoard()
+    board()
 
     iterations += 1
 
@@ -57,17 +57,17 @@ while not winner and iterations < 9:
         # For [0,1,2], [3,4,5], [6,7,8]
         if (choices[index * 3] == choices[((index * 3) + 1)] and choices[index * 3] == choices[((index * 3) + 2)]):
             winner = True
-            printBoard()
+            board()
 
         # For [0,3,6], [1,4,7], [2,5,8]
         if(choices[index] == choices[index + 3] and choices[index + 3] == choices[index + 6]):
             winner = True
-            printBoard()
+            board()
 
     if((choices[0] == choices[4] and choices[4] == choices[8]) or
       (choices[2] == choices[4] and choices[4] == choices[6])):
         winner = True
-        printBoard()
+        board()
 
 if winner:
     print('Player ' + str(int(firstPlayer + 1)) + ' wins!')
