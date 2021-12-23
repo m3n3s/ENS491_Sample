@@ -18,12 +18,12 @@ def partition(start, end, array):
         # Increment the start pointer till it finds an 
         # element greater than  pivot 
         while start < len(array) and array[start] <= pivot:
-            start += 1
+            start = start + 1
               
         # Decrement the end pointer till it finds an 
         # element less than pivot
         while array[end] > pivot:
-            end -= 1
+            end = end - 1
           
         # If start and end have not crossed each other, 
         # swap the numbers on start and end
