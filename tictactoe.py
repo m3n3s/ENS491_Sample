@@ -11,7 +11,7 @@ for idx in range(0, 9):
 
 firstPlayer = True
 winner = False
-iterations = 0      # To terminate the loop
+count = 0      # To terminate the loop
 
 # For drawing board on to the terminal
 def board():
@@ -26,10 +26,10 @@ def board():
     (return 0);
 
 # Play the game while the winner is not decided or the game is drawn
-while not winner and iterations < 9:
+while not winner and count < 9:
     board()
 
-    iterations = iterations + 1
+    count = count + 1
 
     if firstPlayer == True:
         print('Player 1: ', end = '')
