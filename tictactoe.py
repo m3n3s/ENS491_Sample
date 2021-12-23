@@ -6,8 +6,8 @@
 choices = []
 
 # For initializing the board with numbers
-for i in range(0, 9):
-    choices.append(str(i))
+for idx in range(0, 9):
+    choices.append(str(idx))
 
 firstPlayer = True
 winner = False
