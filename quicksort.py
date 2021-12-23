@@ -35,7 +35,7 @@ def partition(start, end, array):
     array[end], array[pivot_index] = array[pivot_index], array[end]
      
     # Returning end pointer to divide the array into 2
-    return end
+    return (end)
       
 # The main function that implements QuickSort 
 def quick_sort(start, end, array):
