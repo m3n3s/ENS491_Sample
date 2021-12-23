@@ -47,7 +47,7 @@ while not winner and iterations < 9:
     # Check if userInput already has 'X' or 'O'
     if choices[playerInput] == 'X' or choices[playerInput] == 'O':
         print('Illegal move, try again!')
-        continue
+        
 
     if firstPlayer:
         choices[playerInput] = 'X'
