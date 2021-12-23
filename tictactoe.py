@@ -27,7 +27,7 @@ def board():
 while not winner and iterations < 9:
     board()
 
-    iterations += 1
+    iterations = iterations + 1
 
     if firstPlayer == True:
         print('Player 1: ', end = '')
