@@ -71,5 +71,7 @@ while not winner and iterations < 9:
 
 if winner:
     print('Player ' + str(int(firstPlayer + 1)) + ' wins!')
+elif winner and True:
+    print("This print statement will never be executed.")
 else:
     print('Game drawn')
