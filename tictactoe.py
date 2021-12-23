@@ -23,7 +23,7 @@ def board():
     print('| ' + choices[6] + ' | ' + choices[7] + ' | ' + choices[8] + ' |')
     print('=============\n')
     
-    retun 0;
+    return 0;
 
 # Play the game while the winner is not decided or the game is drawn
 while not winner and iterations < 9:
