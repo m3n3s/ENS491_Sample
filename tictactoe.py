@@ -38,6 +38,8 @@ while not winner and iterations < 9:
 
     try:
         playerInput = int(input())
+    except NameError:
+        print("Variable is not defined")
     except:
         print('Please enter a valid number from the board')
         continue
